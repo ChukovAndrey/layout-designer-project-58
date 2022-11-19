@@ -27,6 +27,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  font-weight: 400;
 }
 
 body {
@@ -53,8 +55,79 @@ h3 {
   font-size: 32px;
 }
 
-section {
-  max-width: 1100px;
+.header {
+  position: relative;
+
+  background-color: var(--light);
+}
+
+.container {
+  position: relative;
+
+  max-width: 1110px;
   margin: 0 auto;
+}
+
+.section {
   padding: 100px 0;
+}
+
+.section::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../assets/images/background.png") 0 0/cover no-repeat;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.header-title {
+  margin-bottom: 181px;
+}
+
+.color-orange {
+  color: var(--primary);
+}
+
+.hero-img {
+  position: absolute;
+  top: -45px;
+  right: -270px;
+
+  height: 525px;
+}
+
+.header-description {
+  display: flex;
+  gap: 30px;
+}
+
+.description-column {
+  flex-basis: 50%;
+}
+
+.description-text {
+  margin-top: 25px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--primary);
+}
+
+.header-button {
+  width: 148px;
+  height: 49px;
+  margin-top: 40px;
 }
