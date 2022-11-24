@@ -72,8 +72,9 @@ h3 {
   padding: 100px 0;
 }
 
-.section::before {
+.section-bg::before {
   position: absolute;
+  top: 0;
 
   width: 100%;
   height: 100%;
@@ -130,4 +131,67 @@ h3 {
   width: 148px;
   height: 49px;
   margin-top: 40px;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-video {
+  padding-bottom: 500px;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+}
+
+.section-summary {
+  background-color: var(--primary-dark);
+}
+
+.summary-title {
+  font-size: 52px;
+}
+
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex: 0 0 350px;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+  padding: 24px;
+
+  background-color: var(--light);
+}
+
+.card-number {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+  font-size: 64px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+
+  color: var(--primary);
+}
+
+.cards-description {
+  padding: 0;
+
+  color: var(--white);
+
+  background-color: var(--primary-dark);
 }
