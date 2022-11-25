@@ -69,6 +69,8 @@ h3 {
 }
 
 .section {
+  position: relative;
+
   padding: 100px 0;
 }
 
@@ -146,6 +148,7 @@ h3 {
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 1;
 
   margin: auto;
 }
@@ -194,4 +197,59 @@ h3 {
   color: var(--white);
 
   background-color: var(--primary-dark);
+}
+
+.section-ikea {
+  background-color: var(--light);
+}
+
+.ikea-summary {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.ikea-image {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.ikea-image img {
+  vertical-align: middle;
+}
+
+.ikea-subtitle {
+  color: var(--dark50);
+  font-size: 24px;
+  font-family: Neucha, cursive;
+  line-height: 29px;
+}
+
+.ikea-title {
+  margin-bottom: 30px;
+}
+
+.ikea-description-text {
+  font-size: 34px;
+  font-family: Neucha, cursive;
+  line-height: 41px;
+}
+
+.how {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+
+  color: var(--white);
+  font: 14px/16.8px OpenSans, sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
+}
+
+.ikea-text {
+  display: flex;
+  gap: 30px;
+}
+
+.ikea-text-item {
+  flex-basis: 50%;
 }
