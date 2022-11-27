@@ -292,3 +292,83 @@ h3 {
 .section-depreciation .effect-text-item {
   color: var(--white);
 }
+
+footer {
+  padding-top: 100px;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 55px;
+
+  background-color: var(--primary-dark);
+}
+
+.subscription-title {
+  color: var(--white);
+  font-size: 34px;
+}
+
+.email-title {
+  color: var(--white);
+  font: 18px/28.8px OpenSans, sans-serif;
+}
+
+.email-block {
+  display: flex;
+}
+
+.email-input {
+  width: 415px;
+  height: 50px;
+  padding: 15px;
+
+  border: none;
+}
+
+.email-button {
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--primary);
+  border: none;
+}
+
+.email-button::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: url("../assets/images/send.svg") center no-repeat;
+
+  content: "";
+}
+
+.terms-of-service {
+  color: var(--white);
+  font: 12px/19.2px OpenSans, sans-serif;
+}
+
+.terms-of-service a {
+  color: var(--white);
+}
+
+.links {
+  width: 471px;
+  margin: 0 auto;
+  padding: 76px 0 97px;
+
+  font: 14px/22.4px OpenSans, sans-serif;
+  text-align: center;
+}
+
+.links > * {
+  margin-bottom: 16px;
+}
+
+.links-materials a,
+.links-course {
+  color: var(--blue);
+}
